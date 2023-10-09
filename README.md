@@ -56,3 +56,12 @@ and
 https://localhost:5001/Sample/Todolist
 And everything shows!! Beautiful!!!!
 2023-10-09 1057AM
+
+We fleshed out Smartphone.cs and I made brand, model and OS nullable as last three attempts have been gatekept by the fact that they weren't.  This will allow me to scaffold for my next step using;
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet add package Microsoft.EntityFrameworkCore.sqlServer
+dotnet tool install --global dotnet-aspnet-codegenerator --version 6
+dotnet tool install --global dotnet-ef --version 6
+2023-10-09 1110AM
