@@ -12,3 +12,12 @@ but my syntax seems completely fine; not really sure what it is asking for truth
 
 got a BUNCH of errors upon making my model for smartphones, then realized it was b/c i used the wrong brackets lol. oops
 2023-10-08 0930
+
+Going to take a moment to add all necessary tools now
+configured to SQLite via dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet tool install --global dotnet-aspnet-codegenerator --version 6
+dotnet tool install --global dotnet-ef --version 6
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6
+dotnet add package Microsoft.EntityFrameworkCore.sqlServer --version 6
+2023-10-08 0940AM
