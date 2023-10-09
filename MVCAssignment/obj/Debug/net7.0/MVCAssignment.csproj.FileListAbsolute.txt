@@ -1,0 +1,8 @@
+C:\Users\Dennis\Desktop\WEB452_DennisKontoulis_Assignments\WEB452Assignments-DennisKontoulis-0798883\MVCAssignment\obj\Debug\net7.0\MVCAssignment.csproj.AssemblyReference.cache
+C:\Users\Dennis\Desktop\WEB452_DennisKontoulis_Assignments\WEB452Assignments-DennisKontoulis-0798883\MVCAssignment\obj\Debug\net7.0\MVCAssignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dennis\Desktop\WEB452_DennisKontoulis_Assignments\WEB452Assignments-DennisKontoulis-0798883\MVCAssignment\obj\Debug\net7.0\MVCAssignment.AssemblyInfoInputs.cache
+C:\Users\Dennis\Desktop\WEB452_DennisKontoulis_Assignments\WEB452Assignments-DennisKontoulis-0798883\MVCAssignment\obj\Debug\net7.0\MVCAssignment.AssemblyInfo.cs
+C:\Users\Dennis\Desktop\WEB452_DennisKontoulis_Assignments\WEB452Assignments-DennisKontoulis-0798883\MVCAssignment\obj\Debug\net7.0\MVCAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Dennis\Desktop\WEB452_DennisKontoulis_Assignments\WEB452Assignments-DennisKontoulis-0798883\MVCAssignment\obj\Debug\net7.0\MVCAssignment.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Dennis\Desktop\WEB452_DennisKontoulis_Assignments\WEB452Assignments-DennisKontoulis-0798883\MVCAssignment\obj\Debug\net7.0\MVCAssignment.RazorAssemblyInfo.cache
+C:\Users\Dennis\Desktop\WEB452_DennisKontoulis_Assignments\WEB452Assignments-DennisKontoulis-0798883\MVCAssignment\obj\Debug\net7.0\MVCAssignment.RazorAssemblyInfo.cs

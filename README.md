@@ -21,3 +21,10 @@ dotnet add package Microsoft.EntityFrameworkCore.Design --version 6
 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6
 dotnet add package Microsoft.EntityFrameworkCore.sqlServer --version 6
 2023-10-08 0940AM
+
+now going to attempt scaffolding via
+dotnet aspnet-codegenerator controller -name PhoneController -m Phone - dc MvcPhoneContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -sqlite
+referred to Week04 in Blackboard for this line
+
+Initial scaffolding failed, going to attempt to fix errors holding me up
+2023-10-08 0940AM
