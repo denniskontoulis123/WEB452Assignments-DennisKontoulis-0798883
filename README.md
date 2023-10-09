@@ -46,3 +46,13 @@ It looks like I was running it in Dotnet 7. hoping that doing the global.json fi
 
 Attempt 3 has yielded no errors yet; I'm fumbling a lot less now
 2023-10-09 1050AM
+
+Now that I'm using proper syntax and not confusing myself with too-recent Stack Overflow and Google articles, I'm not getting errors. wrapped up building the todolist basics. no errors. gonna test now.
+2023-10-09 1055AM
+
+Storing urls so I can check later
+https://localhost:5001/Sample/Index
+and 
+https://localhost:5001/Sample/Todolist
+And everything shows!! Beautiful!!!!
+2023-10-09 1057AM
