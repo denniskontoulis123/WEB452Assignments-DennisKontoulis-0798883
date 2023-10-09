@@ -65,3 +65,10 @@ dotnet add package Microsoft.EntityFrameworkCore.sqlServer
 dotnet tool install --global dotnet-aspnet-codegenerator --version 6
 dotnet tool install --global dotnet-ef --version 6
 2023-10-09 1110AM
+
+
+Things seem stable, gonna put together the seeddata.cs file now
+2023-10-09 1143AM
+
+SeedData was more of a review of last semester than anything; included a Pixel, the new iPhone, a Samsung and an LG phone.  Going to now start work on the NotFound view.
+12023-10-09 1152AM
