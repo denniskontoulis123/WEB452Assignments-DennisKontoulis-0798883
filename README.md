@@ -37,3 +37,9 @@ going tot ry and move away from a dynamic model. hoped it might make life easier
 
 deleting everything and starting fresh. cant get rid of these errors.
 2023-10-09 1020AM
+
+starting fresh again. cant get anythign to work.
+2023-10-09 1036AM
+
+It looks like I was running it in Dotnet 7. hoping that doing the global.json file adjustment will force it to do what i want.
+2023-10-09 1045AM
