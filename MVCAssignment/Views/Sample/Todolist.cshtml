@@ -1,9 +1,9 @@
 @model dynamic
 
-<form asp-action="=Todolist" method="post">
+<form asp-action="Todolist" method="post">
     ID : <input type="text" name="id" /><br>
     Title: <input type="text" name="title" /><br>
-    Description: <input type="test" name="description" /><br>
+    Description: <input type="text" name="description" /><br>
     <input type="submit" value="Add Item">
 </form>
 
@@ -11,4 +11,4 @@
 {
     <h3>Added Item:</h3>
     @Model.Title (@Model.Id): @Model.Description
-    }
+}
