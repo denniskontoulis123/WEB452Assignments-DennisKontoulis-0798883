@@ -1,16 +1,7 @@
-using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
-using Microsoft.Extensions.Options;
-using Microsoft.EntityFrameworkCore;
-using MVCAssignment.Models;
-using MVCAssignment.Data;
-
 var builder = WebApplication.CreateBuilder(args);
-var Configuration = builder.Configuration;
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
