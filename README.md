@@ -36,4 +36,4 @@ going tot ry and move away from a dynamic model. hoped it might make life easier
 2023-10-09 0954AM
 
 deleting everything and starting fresh. cant get rid of these errors.
-2023-10-09
+2023-10-09 1020AM
