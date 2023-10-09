@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using MVCAssignment.Models;
 
 namespace MVCAssignment.Controllers{
     public class SampleController : Controller {
@@ -9,7 +10,7 @@ namespace MVCAssignment.Controllers{
 
         public IActionResult Todolist(int id, string title, string description)
         {
-            var todo = new { Id = id, Title = title, Description = description };
+            var todo = new TodoItem { Id = id, Title = title, Description = description };
             return View(todo);
         }
     }

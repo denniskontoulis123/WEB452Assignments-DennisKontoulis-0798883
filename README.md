@@ -28,3 +28,9 @@ referred to Week04 in Blackboard for this line
 
 Initial scaffolding failed, going to attempt to fix errors holding me up
 2023-10-08 0940AM
+
+google said to add = null!; to the properties giving me problems.
+2023-10-08 0943AM
+
+going tot ry and move away from a dynamic model. hoped it might make life easier but it did not.
+2023-10-08 0954AM
