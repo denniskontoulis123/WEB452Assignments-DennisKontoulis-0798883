@@ -43,3 +43,6 @@ starting fresh again. cant get anythign to work.
 
 It looks like I was running it in Dotnet 7. hoping that doing the global.json file adjustment will force it to do what i want.
 2023-10-09 1045AM
+
+Attempt 3 has yielded no errors yet; I'm fumbling a lot less now
+2023-10-09 1050AM
