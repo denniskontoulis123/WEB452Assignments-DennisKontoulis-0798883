@@ -72,3 +72,6 @@ Things seem stable, gonna put together the seeddata.cs file now
 
 SeedData was more of a review of last semester than anything; included a Pixel, the new iPhone, a Samsung and an LG phone.  Going to now start work on the NotFound view.
 12023-10-09 1152AM
+
+Made a simple notfound page, it redirects per requirements. Struggling to fill out the other requirements of the step and might leave it as is for the sake of part marks.
+12023-10-09 1202PM
