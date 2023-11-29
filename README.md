@@ -13,14 +13,18 @@ set the file up in dotnet 6 per instructions, used the following commands for to
     dotnet add package Microsoft.EntityFrameworkCore.sqlServer --version 6
 
 Will now be scaffolding 
-2023-11-29 17:01PM EST
+2023-11-29 19:01PM EST
 
 scaffolded succesfully with
 dotnet aspnet-codegenerator controller -name GamesController -m Games -dc MvcGamesContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -sqlite
-2023-11-29 17:05PM EST
+2023-11-29 19:05PM EST
 
 after much wrestling got the intiial DB setup
 dotnet ef migrations add InitialCreate
 and then
 dotnet ef database update
-2023-11-29
+2023-11-29 19:35PM EST
+
+
+set up not found page, updated controller with it
+2023-11-29 19:50PM EST
