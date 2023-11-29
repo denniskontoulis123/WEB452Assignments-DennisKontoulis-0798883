@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dennis\\Desktop\\WEB452_DennisKontoulis_Assignments\\MvcGames\\MvcGames.csproj": {}
+    "C:\\Users\\Dennis\\Desktop\\WEB452_DennisKontoulis_Assignments\\WEB452Assignments-DennisKontoulis-0798883\\MvcGames\\MvcGames.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dennis\\Desktop\\WEB452_DennisKontoulis_Assignments\\MvcGames\\MvcGames.csproj": {
+    "C:\\Users\\Dennis\\Desktop\\WEB452_DennisKontoulis_Assignments\\WEB452Assignments-DennisKontoulis-0798883\\MvcGames\\MvcGames.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dennis\\Desktop\\WEB452_DennisKontoulis_Assignments\\MvcGames\\MvcGames.csproj",
+        "projectUniqueName": "C:\\Users\\Dennis\\Desktop\\WEB452_DennisKontoulis_Assignments\\WEB452Assignments-DennisKontoulis-0798883\\MvcGames\\MvcGames.csproj",
         "projectName": "MvcGames",
-        "projectPath": "C:\\Users\\Dennis\\Desktop\\WEB452_DennisKontoulis_Assignments\\MvcGames\\MvcGames.csproj",
+        "projectPath": "C:\\Users\\Dennis\\Desktop\\WEB452_DennisKontoulis_Assignments\\WEB452Assignments-DennisKontoulis-0798883\\MvcGames\\MvcGames.csproj",
         "packagesPath": "C:\\Users\\Dennis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dennis\\Desktop\\WEB452_DennisKontoulis_Assignments\\MvcGames\\obj\\",
+        "outputPath": "C:\\Users\\Dennis\\Desktop\\WEB452_DennisKontoulis_Assignments\\WEB452Assignments-DennisKontoulis-0798883\\MvcGames\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dennis\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,26 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SQlite": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.sqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
