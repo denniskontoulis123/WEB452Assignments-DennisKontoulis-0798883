@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "joTCrtBh3OY1dLocCHfceonQa/zLruDLChqokQcxEnyODIT8hqnuVjkJV7Pw+OAc/G23FVHgxCTX1Ivr3psdow==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dennis\\Desktop\\WEB452_DennisKontoulis_Assignments\\WEB452Assignments-DennisKontoulis-0798883\\MvcGames\\MvcGames.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dennis\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.13\\microsoft.netcore.app.ref.6.0.13.nupkg.sha512",
+    "C:\\Users\\Dennis\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.13\\microsoft.windowsdesktop.app.ref.6.0.13.nupkg.sha512",
+    "C:\\Users\\Dennis\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.13\\microsoft.aspnetcore.app.ref.6.0.13.nupkg.sha512",
+    "C:\\Users\\Dennis\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.13\\microsoft.netcore.app.host.win-x64.6.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
