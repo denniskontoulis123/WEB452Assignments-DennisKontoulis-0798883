@@ -18,3 +18,9 @@ Will now be scaffolding
 scaffolded succesfully with
 dotnet aspnet-codegenerator controller -name GamesController -m Games -dc MvcGamesContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -sqlite
 2023-11-29 17:05PM EST
+
+after much wrestling got the intiial DB setup
+dotnet ef migrations add InitialCreate
+and then
+dotnet ef database update
+2023-11-29
