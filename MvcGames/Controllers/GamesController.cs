@@ -29,14 +29,14 @@ namespace MvcGames.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return View("NotFound");
             }
 
             var games = await _context.Games
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (games == null)
             {
-                return NotFound();
+                return View("NotFound");
             }
 
             return View(games);
@@ -69,13 +69,13 @@ namespace MvcGames.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return View("NotFound");
             }
 
             var games = await _context.Games.FindAsync(id);
             if (games == null)
             {
-                return NotFound();
+                return View("NotFound");
             }
             return View(games);
         }
@@ -89,7 +89,7 @@ namespace MvcGames.Controllers
         {
             if (id != games.Id)
             {
-                return NotFound();
+                return View("NotFound");
             }
 
             if (ModelState.IsValid)
@@ -103,7 +103,7 @@ namespace MvcGames.Controllers
                 {
                     if (!GamesExists(games.Id))
                     {
-                        return NotFound();
+                        return View("NotFound");
                     }
                     else
                     {
@@ -120,14 +120,14 @@ namespace MvcGames.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return View("NotFound");
             }
 
             var games = await _context.Games
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (games == null)
             {
-                return NotFound();
+                return View("NotFound");
             }
 
             return View(games);
@@ -150,4 +150,3 @@ namespace MvcGames.Controllers
         }
     }
 }
-    
