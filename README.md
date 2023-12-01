@@ -54,3 +54,7 @@ Tried to chang eit via the Edit and it didn't update either. wtf.
 
 I FIXED IT!!! I DROPPED THE TABLE AND RE-ADDED IT!!! 40 MINUTES LATER!! HOLY MOLY!!
 2023-12-01 12:24PM EST
+
+starting on step 4 now; added the checkbox and button, going to do the hard coding now.  sorta worked on this in the last class, couldn't figure it out though;
+i think it makes the most sense to reference Dr Majid's code on this to some extent. might even have to update the model potentially but will see.
+2023-12-01 12:47PM EST

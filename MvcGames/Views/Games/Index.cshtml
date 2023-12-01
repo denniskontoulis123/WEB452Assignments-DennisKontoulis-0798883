@@ -21,9 +21,13 @@
         <input type="submit" value="Search" />
     </p>
 </form>
+<form asp-action="HideSelected">
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Title)
             </th>
@@ -51,6 +55,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                <input type="checkbox" value="@item.Id" name="selectedGames">
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
@@ -81,3 +88,5 @@
 }
     </tbody>
 </table>
+<input type="submit" value="Hide Selected Games" class="btn btn-warning" />
+</form>
