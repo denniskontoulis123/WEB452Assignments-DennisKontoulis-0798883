@@ -15,4 +15,6 @@ public class Games
     public decimal Price { get; set; }
 
     public int Score { get; set; }
+
+    public bool IsHidden { get; set; }
 }

@@ -58,3 +58,12 @@ I FIXED IT!!! I DROPPED THE TABLE AND RE-ADDED IT!!! 40 MINUTES LATER!! HOLY MOL
 starting on step 4 now; added the checkbox and button, going to do the hard coding now.  sorta worked on this in the last class, couldn't figure it out though;
 i think it makes the most sense to reference Dr Majid's code on this to some extent. might even have to update the model potentially but will see.
 2023-12-01 12:47PM EST
+
+definitely going to update the model; i think it's the best way of doing this. going to give them a boolean value for "IsHidden"; it won't show in the table
+but it'll help me tie the checkbox to it in some capacity. i think upon clicking the button it should present games that AREN'T hidden. similar to DeleteSelected 
+but only kind of.
+2023-12-01 12:49PM EST
+
+managed to put some code together in the controller; did end up updating the model with a new IsHidden boolean; ran the test but it did not work initially. adjusted
+Line 26 to exclude hidden games from the list. its working now!!! gotta do the next step so i can see them is all lol.
+2023-12-01 1:13PM EST

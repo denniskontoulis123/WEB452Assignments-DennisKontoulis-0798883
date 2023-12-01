@@ -28,7 +28,8 @@ namespace MvcGames.Models
                         Developer = "Capcom",
                         Genre = "Fantasy",
                         Score = 10,
-                        Price = 79.99M
+                        Price = 79.99M,
+                        IsHidden = false
                     },
 
                     new Games
@@ -39,7 +40,8 @@ namespace MvcGames.Models
                         Developer = "Square Enix",
                         Genre = "Fantasy",
                         Score = 7,
-                        Price = 79.99M
+                        Price = 79.99M,
+                        IsHidden = false
                     },
                     new Games
                     {
@@ -49,7 +51,8 @@ namespace MvcGames.Models
                         Developer = "Capcom",
                         Genre = "Fighting",
                         Score = 10,
-                        Price = 79.99M
+                        Price = 79.99M,
+                        IsHidden = false
                     },
                     new Games
                     {
@@ -59,7 +62,8 @@ namespace MvcGames.Models
                         Developer = "Arika",
                         Genre = "Fighting",
                         Score = 6,
-                        Price = 49.99M
+                        Price = 49.99M,
+                        IsHidden = false
                     }
                 );
                 context.SaveChanges();

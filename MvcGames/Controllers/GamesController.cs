@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using MvcGames.Models;
+using SQLitePCL;
 
 namespace MvcGames.Controllers
 {
@@ -21,32 +23,32 @@ namespace MvcGames.Controllers
         // GET: Games
         public async Task<IActionResult> Index(string searchString, string searchBy)
         {
-            var games = from m in _context.Games select m;
+            var games = _context.Games.Where(m => !m.IsHidden); // this will exclude hidden games ideally
 
-    if (!string.IsNullOrEmpty(searchString))
-    {
-        if (searchBy == "RELEASEDATE")
+        if (!string.IsNullOrEmpty(searchString))
         {
-            if (DateTime.TryParse(searchString, out var date))
+            if (searchBy == "RELEASEDATE")
             {
-                games = games.Where(g => g.ReleaseDate.Date == date.Date);
+                if (DateTime.TryParse(searchString, out var date))
+                {
+                    games = games.Where(g => g.ReleaseDate.Date == date.Date);
+                }
+            }
+            else if (searchBy == "DEVELOPER")
+            {
+                games = games.Where(g => g.Developer.Contains(searchString));
+            }
+            else if (searchBy == "PRICE")
+            {
+                if (decimal.TryParse(searchString, out var price))
+                {
+                    games = games.Where(g => g.Price == price);
+                }
             }
         }
-        else if (searchBy == "DEVELOPER")
-        {
-            games = games.Where(g => g.Developer.Contains(searchString));
-        }
-        else if (searchBy == "PRICE")
-        {
-            if (decimal.TryParse(searchString, out var price))
-            {
-                games = games.Where(g => g.Price == price);
-            }
-        }
-    }
 
-    return View(await games.ToListAsync());
-}
+        return View(await games.ToListAsync());
+        }
 
         // GET: Games/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -172,5 +174,27 @@ namespace MvcGames.Controllers
         {
             return _context.Games.Any(e => e.Id == id);
         }
+
+           //HideSelected stuff goes below here
+    public async Task<IActionResult> HideSelected(int[] selectedGames)
+    {
+        if (selectedGames != null && selectedGames.Length > 0)
+        {
+            var gamesToHide = await _context.Games
+                .Where(m => selectedGames.Contains(m.Id))
+                .ToListAsync();
+
+            foreach (var game in gamesToHide)
+            {
+                game.IsHidden = true;
+            }
+
+            await _context.SaveChangesAsync();
+        }
+        return RedirectToAction(nameof(Index));
     }
+    }
+
+
+
 }
