@@ -193,6 +193,12 @@ namespace MvcGames.Controllers
         }
         return RedirectToAction(nameof(Index));
     }
+
+    public async Task<IActionResult> Hidden()
+    {
+        var hiddenGames = await _context.Games.Where(m => m.IsHidden).ToListAsync();
+        return View(hiddenGames); 
+    }
     }
 
 

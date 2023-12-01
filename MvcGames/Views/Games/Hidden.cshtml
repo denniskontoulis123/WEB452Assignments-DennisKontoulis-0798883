@@ -1,0 +1,62 @@
+@model IEnumerable<MvcGames.Models.Games>
+
+@{
+    ViewData["Title"] = "Hidden";
+}
+
+<h1>Hidden Games</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReleaseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Publisher)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Developer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Score)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.Title
+            </td>
+            <td>
+                @item.ReleaseDate
+            </td>
+            <td>
+                @item.Publisher
+            </td>
+            <td>
+                @item.Developer
+            </td>
+            <td>
+                @item.Genre
+            </td>
+            <td>
+                @item.Price
+            </td>
+            <td>
+                @item.Score
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

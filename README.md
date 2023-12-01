@@ -67,3 +67,7 @@ but only kind of.
 managed to put some code together in the controller; did end up updating the model with a new IsHidden boolean; ran the test but it did not work initially. adjusted
 Line 26 to exclude hidden games from the list. its working now!!! gotta do the next step so i can see them is all lol.
 2023-12-01 1:13PM EST
+
+fumbled around for a bit with naming conventions/making sure actions are doing what they need to and etc. you can now see the hidden games by clicking the anchor in the index. it will return a plain table of the games without any edit/delete/details features + i had to strip the checkbox and much of the 
+@Html.DisplayFor(modelItem => item.Score) code because it wasn't displaying ANYTHING initially. presently I am very happy I went to class after doing bad on Assignment 1.
+2023-12-01 1:34PM EST
