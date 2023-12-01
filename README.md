@@ -34,3 +34,14 @@ Began work on Assignment 2; did steps 1 and 2, included a genre and developer pr
 
 Added search functionality using Dr Majid's code as reference; surprisingly easy to integrate.  I feel much better about this project than I do the first one.
 2023-12-01 11:12AM EST
+
+Dr Majid's code is good but doesn't exactly fit the reqs of the assignment; will still need to upgrade it to fit all requirements.  I think I will use a switch statement- like
+in the class example for sorting by clicking the anchors -but essentially for filtering instead.
+2023-12-01 11:21AM EST
+
+Nevermind, not gonna od a switch statement, too complicated, will use IF statements
+2023-12-01 11:31AM EST
+
+Cooked up a few if statements but my developer and genre values wont show in the actual table for some reason; thought I updated correctly but I guess not?
+Date search works but you have to type the date exactly as is.  I'm not sure how to improve it beyond that but it TECHNICALLY fills the requirement.
+2023-12-01 11:42AM EST

@@ -19,15 +19,34 @@ namespace MvcGames.Controllers
         }
 
         // GET: Games
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string searchString, string searchBy)
         {
             var games = from m in _context.Games select m;
-            if (!String.IsNullOrEmpty(searchString)) {
-                games = games.Where(s => s.Title!.Contains(searchString));
-            }
 
-            return View(await games.ToListAsync());
+    if (!string.IsNullOrEmpty(searchString))
+    {
+        if (searchBy == "RELEASEDATE")
+        {
+            if (DateTime.TryParse(searchString, out var date))
+            {
+                games = games.Where(g => g.ReleaseDate.Date == date.Date);
+            }
         }
+        else if (searchBy == "DEVELOPER")
+        {
+            games = games.Where(g => g.Developer.Contains(searchString));
+        }
+        else if (searchBy == "PRICE")
+        {
+            if (decimal.TryParse(searchString, out var price))
+            {
+                games = games.Where(g => g.Price == price);
+            }
+        }
+    }
+
+    return View(await games.ToListAsync());
+}
 
         // GET: Games/Details/5
         public async Task<IActionResult> Details(int? id)
