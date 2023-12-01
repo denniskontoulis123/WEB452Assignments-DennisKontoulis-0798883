@@ -25,7 +25,7 @@ namespace MvcGames.Controllers
         {
             var games = _context.Games.Where(m => !m.IsHidden); // this will exclude hidden games ideally
 
-        if (!string.IsNullOrEmpty(searchString))
+        if (!string.IsNullOrEmpty(searchString)) // search logic below in a series of if statements
         {
             if (searchBy == "RELEASEDATE")
             {
@@ -176,7 +176,7 @@ namespace MvcGames.Controllers
         }
 
            //HideSelected stuff goes below here
-    public async Task<IActionResult> HideSelected(int[] selectedGames)
+    public async Task<IActionResult> HideSelected(int[] selectedGames) // hides selected games
     {
         if (selectedGames != null && selectedGames.Length > 0)
         {
@@ -194,13 +194,13 @@ namespace MvcGames.Controllers
         return RedirectToAction(nameof(Index));
     }
 
-    public async Task<IActionResult> Hidden()
+    public async Task<IActionResult> Hidden() 
     {
         var hiddenGames = await _context.Games.Where(m => m.IsHidden).ToListAsync();
         return View(hiddenGames); 
     }
 
-    public async Task<IActionResult> ReturnHiddenGames()
+    public async Task<IActionResult> ReturnHiddenGames() // returns hidden games back to original table
 {
     var hiddenGames = await _context.Games.Where(m => m.IsHidden).ToListAsync();
 
@@ -213,5 +213,26 @@ namespace MvcGames.Controllers
 
     return RedirectToAction(nameof(Index));
 }
+
+    // GET: Movies/DeleteAll
+    public async Task<IActionResult> DeleteAll() // deleteall, see readme
+        {
+            return View();
+        }
+   // POST: Movies/DeleteAll
+    [HttpPost, ActionName("DeleteAll")]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DeleteConfirmedAll() // delete confirmed all, see readme
+        {
+            var allGames = _context.Games.ToList();
+            if (allGames.Count > 0) 
+            {
+                _context.Games.RemoveRange(allGames);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(Index));
+
+        }
     }
 }

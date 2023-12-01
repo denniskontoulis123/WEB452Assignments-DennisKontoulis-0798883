@@ -1,0 +1,16 @@
+@model MvcGames.Models.Games
+
+@{
+    ViewData["Title"] = "DeleteAll";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you SURE you want to delete all games in the database?</h3>
+<div>
+    <form asp-action="DeleteAll">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete All" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

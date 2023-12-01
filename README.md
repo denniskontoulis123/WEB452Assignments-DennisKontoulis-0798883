@@ -78,3 +78,6 @@ to false. calling it ReturnHiddenGames rather than Delete so i don't confuse mys
 
 testing reveals that it does indeed work. the last step is very easy. creating a DeleteAll that wipes the database out. i will admittedly be referencing much of Dr Majid's code for this as we did it in class.
 2023-12-01 2:03PM EST
+
+Finally finished. i think i did really good. left comments across code so it isn't so messy looking. thank you dr Majid for being helpful all semester and teaching in a way that got through to me.
+2023-12-01 2:20PM EST
