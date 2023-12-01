@@ -25,6 +25,8 @@ namespace MvcGames.Models
                         Title = "Dragon's Dogma",
                         ReleaseDate = DateTime.Parse("2012-5-22"),
                         Publisher = "Capcom",
+                        Developer = "Capcom",
+                        Genre = "Fantasy",
                         Score = 10,
                         Price = 79.99M
                     },
@@ -34,6 +36,8 @@ namespace MvcGames.Models
                         Title = "Final Fantasy 16",
                         ReleaseDate = DateTime.Parse("2023-6-22"),
                         Publisher = "Square Enix",
+                        Developer = "Square Enix",
+                        Genre = "Fantasy",
                         Score = 7,
                         Price = 79.99M
                     },
@@ -42,6 +46,8 @@ namespace MvcGames.Models
                         Title = "Street Fighter 6",
                         ReleaseDate = DateTime.Parse("2023-6-03"),
                         Publisher = "Capcom",
+                        Developer = "Capcom",
+                        Genre = "Fighting",
                         Score = 10,
                         Price = 79.99M
                     },
@@ -50,6 +56,8 @@ namespace MvcGames.Models
                         Title = "Tekken 7",
                         ReleaseDate = DateTime.Parse("2015-2-18"),
                         Publisher = "Bandai Namco Entertainment",
+                        Developer = "Arika",
+                        Genre = "Fighting",
                         Score = 6,
                         Price = 49.99M
                     }

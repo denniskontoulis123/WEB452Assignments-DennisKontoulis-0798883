@@ -9,6 +9,9 @@ public class Games
     [DataType(DataType.Date)]
     public DateTime ReleaseDate { get; set;}
     public string? Publisher { get; set;}
+
+    public string? Developer { get; set;}
+    public string? Genre { get; set;}
     public decimal Price { get; set; }
 
     public int Score { get; set; }

@@ -28,3 +28,6 @@ dotnet ef database update
 
 set up not found page, updated controller with it
 2023-11-29 19:50PM EST
+
+Began work on Assignment 2; did steps 1 and 2, included a genre and developer property.  Might need to add another one later for the hidden part of the assignment but we'll see.
+2023-12-01 11:05AM EST
