@@ -51,3 +51,6 @@ Still trying to get the columns to show; they are not.
 
 Tried to chang eit via the Edit and it didn't update either. wtf.
 2023-12-01 12:01PM EST
+
+I FIXED IT!!! I DROPPED THE TABLE AND RE-ADDED IT!!! 40 MINUTES LATER!! HOLY MOLY!!
+2023-12-01 12:24PM EST
