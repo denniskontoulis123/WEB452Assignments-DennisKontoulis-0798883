@@ -45,3 +45,6 @@ Nevermind, not gonna od a switch statement, too complicated, will use IF stateme
 Cooked up a few if statements but my developer and genre values wont show in the actual table for some reason; thought I updated correctly but I guess not?
 Date search works but you have to type the date exactly as is.  I'm not sure how to improve it beyond that but it TECHNICALLY fills the requirement.
 2023-12-01 11:42AM EST
+
+Still trying to get the columns to show; they are not.
+2023-12-01 11:59AM EST
