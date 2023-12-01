@@ -75,3 +75,6 @@ fumbled around for a bit with naming conventions/making sure actions are doing w
 this step should be pretty easy. im just reversing the logic of the step that selects the movies and changes the boolean. this time the boolean for IsHidden gets set back
 to false. calling it ReturnHiddenGames rather than Delete so i don't confuse myself but keeping Delete on the button.
 2023-12-01 1:56PM EST
+
+testing reveals that it does indeed work. the last step is very easy. creating a DeleteAll that wipes the database out. i will admittedly be referencing much of Dr Majid's code for this as we did it in class.
+2023-12-01 2:03PM EST
