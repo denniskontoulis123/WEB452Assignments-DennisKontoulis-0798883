@@ -31,3 +31,6 @@ set up not found page, updated controller with it
 
 Began work on Assignment 2; did steps 1 and 2, included a genre and developer property.  Might need to add another one later for the hidden part of the assignment but we'll see.
 2023-12-01 11:05AM EST
+
+Added search functionality using Dr Majid's code as reference; surprisingly easy to integrate.  I feel much better about this project than I do the first one.
+2023-12-01 11:12AM EST

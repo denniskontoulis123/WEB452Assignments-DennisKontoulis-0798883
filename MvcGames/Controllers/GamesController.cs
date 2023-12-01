@@ -19,9 +19,14 @@ namespace MvcGames.Controllers
         }
 
         // GET: Games
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Games.ToListAsync());
+            var games = from m in _context.Games select m;
+            if (!String.IsNullOrEmpty(searchString)) {
+                games = games.Where(s => s.Title!.Contains(searchString));
+            }
+
+            return View(await games.ToListAsync());
         }
 
         // GET: Games/Details/5
