@@ -71,3 +71,7 @@ Line 26 to exclude hidden games from the list. its working now!!! gotta do the n
 fumbled around for a bit with naming conventions/making sure actions are doing what they need to and etc. you can now see the hidden games by clicking the anchor in the index. it will return a plain table of the games without any edit/delete/details features + i had to strip the checkbox and much of the 
 @Html.DisplayFor(modelItem => item.Score) code because it wasn't displaying ANYTHING initially. presently I am very happy I went to class after doing bad on Assignment 1.
 2023-12-01 1:34PM EST
+
+this step should be pretty easy. im just reversing the logic of the step that selects the movies and changes the boolean. this time the boolean for IsHidden gets set back
+to false. calling it ReturnHiddenGames rather than Delete so i don't confuse myself but keeping Delete on the button.
+2023-12-01 1:56PM EST

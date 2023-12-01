@@ -199,8 +199,19 @@ namespace MvcGames.Controllers
         var hiddenGames = await _context.Games.Where(m => m.IsHidden).ToListAsync();
         return View(hiddenGames); 
     }
+
+    public async Task<IActionResult> ReturnHiddenGames()
+{
+    var hiddenGames = await _context.Games.Where(m => m.IsHidden).ToListAsync();
+
+    foreach (var game in hiddenGames)
+    {
+        game.IsHidden = false;
     }
 
+    await _context.SaveChangesAsync();
 
-
+    return RedirectToAction(nameof(Index));
+}
+    }
 }
